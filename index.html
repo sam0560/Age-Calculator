@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="family" href="https://fonts.google.com/specimen/Poppins">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+      <main>
+        <div class="card">
+          <div class="date-input">
+            <form id="Form-values">
+              <div class="date-item">
+                <label for="day"><small>Day</small></label><br>
+                <input type="text" id="day" placeholder="DD">
+                <div class="error"></div>
+              </div>
+              <div class="date-item">
+                <label for="month"><small>Month</small></label><br>
+                <input type="text" id="month" placeholder="MM">
+                <div class="error"></div>
+              </div>
+              <div class="date-item">
+                <label for="year"><small>Year</small></label><br>
+                <input type="text" id="year" placeholder="YYYY">
+                <div class="error"></div>
+              </div>
+            </form>
+          </div>
+          <div class="h-rule">
+            <div class="rule"></div>
+              <a href="#" class="img" id="buttonClicked"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+                  <g fill="none" stroke="#FFF" stroke-width="1">
+                    <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/>
+                  </g>
+                </svg>
+              </a>
+          </div>
+          <div class="age-calc-output">
+            <h1><span id="yrs">-- </span> years</h1>
+            <h1><span id="mnth">-- </span> months</h1>
+            <h1><span id="daydisplay">-- </span> days</h1>
+          </div>
+        </div>
+      </main>
+  <script src="script.js"></script>
+</body>
+</html>
