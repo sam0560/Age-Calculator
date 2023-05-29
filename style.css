@@ -1,22 +1,27 @@
 @import url(https://fonts.google.com/specimen/Poppins);
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
     background-color: hsl(0, 0%, 94%);
     height: 100vh;
-    max-width: 1300px;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
+    max-width: 1440px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card{
     background-color: hsl(0, 0%, 100%);
     max-width: 1000px;
-    width: 40%;
+    width: 500px;
     margin: 5% auto;
     border-radius: 20px 20px 100px 20px;
-    padding: 50px 50px 0 50px;
+    padding: 50px;
     overflow: hidden;
 }
 
@@ -24,7 +29,6 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    /* align-items: center; */
     gap: 20px;
 }
 
@@ -99,7 +103,7 @@ h1{
     font-weight: 800;
     color: hsl(0, 0%, 8%);
     font-family: Poppins;
-    line-height: 0.3;
+    line-height: 1;
     font-style: italic;
 }
 
@@ -112,7 +116,6 @@ h1 span {
 @media (max-width: 1000px){
     .age-calc-output h1{
         font-size: 60px;
-        /* display: block; */
     }
 }
 
@@ -139,17 +142,23 @@ h1 span {
         right: 45%;
         bottom: -20px;
     }
-
+    .age-calc-output{
+        margin-top: 50px;
+    }
     .age-calc-output h1{
-        font-size: 40px;
-        display: block;
+        font-size: 45px;
     }
 }
 
 @media(max-width: 500px){
     .card{
-        max-width: 250px;
-        width: 100%;
         padding: 40px;
     }
 }
+
+@media(max-width: 375px){
+    .card{
+        padding: 40px 20px;
+    }
+}
+
